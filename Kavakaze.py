@@ -17,17 +17,17 @@ def the_bot(id, passw):
     bot = InstaBot(
         login=id,
         password=passw,
-        like_per_day=1000,
-        comments_per_day=1000,
-        tag_list=['edm', 'rave', 'dj', 'maddecent', 'house', 'edmlifestyle', 'bassmusic', 'bass', 'festival', 'tally', 'trap', 'housemusic', 'dubstep', 'edmlifestyle', 'dancemusic', 'ravers', 'ravegirl', 'plur', 'electronicdancemusic', 'edmhumor', 'edmfamily', 'futurebass'],
+        like_per_day=1920,
+        comments_per_day=0,
+        tag_list=['kratom', 'iamkratom', 'kratomlife', 'kratomcommunity', 'kratomvendor', 'kratompowder', 'kratomtea', 'kratomusa', 'kratomsaveslives', 'kratomheals', 'kratomherbal', 'kratomcanada', 'alternativelifestyle', 'alternatives', 'tea','greentea', 'kava', 'homeopathy', 'homeopathics', 'vape', 'vapestore', 'vapeshop', 'florida', 'kava', 'tallahassee', '850', 'tally', 'juice', 'capital', 'capitalcity', 'smallbusiness', 'healthy', 'collegetown', 'fsu', 'famu', 'fsunited', 'tcc', 'freshman', 'sophmore', 'junior', 'senior', 'plants', 'goodvibes', 'vibes', 'tallahasseeevents', 'artistic', 'photography', 'nolenation', 'noles', 'gonoles', 'ihearttally', 'bar', 'coffee', 'espresso', 'tallahasseecoffee', 'tallycoffee', 'coffeeculture', 'motivationmonday', 'latte', 'latteart', 'hipster',],
         tag_blacklist=['rain', 'thunderstorm'],
         user_blacklist={},
         max_like_for_one_tag=1000,
         follow_per_day=0,
         follow_time=1 * 5,
-        unfollow_per_day=1440,
-        unfollow_break_min=60,
-        unfollow_break_max=60,
+        unfollow_per_day=0,
+        unfollow_break_min=0,
+        unfollow_break_max=0,
         log_mod=0,
         proxy='',
         # List of list of words, each of which will be used to generate comment
@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("DJ_There_It_Is", "Kenders103*")])
-#p = Process(target=the_bot, args=["DJ_There_It_Is", "Kenders103*"])
+p.starmap(the_bot, [("Kavakaze", "@ndr3w0414")])
+#p = Process(target=the_bot, args=["Kavakaze", "@ndr3w0414"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)

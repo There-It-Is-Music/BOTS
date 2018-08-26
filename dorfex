@@ -17,13 +17,13 @@ def the_bot(id, passw):
     bot = InstaBot(
         login=id,
         password=passw,
-        like_per_day=1920,
+        like_per_day=10000,
         comments_per_day=0,
-        tag_list=['edm', 'rave', 'shpongle', 'festivals', 'spotify', 'musicblog', 'musicblogger', 'edmmusic', 'lollapalooza', 'redrocks' 'trippy', 'weirdbass', 'electronicmusic', 'musicfestivals', 'musiclover', 'bassmusic', 'streetwear', 'ootd', 'streetstyle', 'plur', 'electronicdancemusic', 'edmhumor', 'edmfamily', 'futurebass'],
+        tag_list=['edm', 'rave', 'bassnectar', 'tipper', 'shpongle', 'festivals', 'spotify', 'trippy', 'weirdbass', 'electronicmusic', 'musicfestivals', 'musiclover', 'bassmusic', 'streetwear', 'ootd', 'streetstyle', 'plur', 'electronicdancemusic', 'edmhumor', 'edmfamily', 'futurebass'],
         tag_blacklist=['rain', 'thunderstorm'],
         user_blacklist={},
-        max_like_for_one_tag=100,
-        follow_per_day=0,
+        max_like_for_one_tag=1000,
+        follow_per_day=10000,
         follow_time=1 * 5,
         unfollow_per_day=0,
         unfollow_break_min=15,
@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("dorfex_bos", "moonphase66")])
-#p = Process(target=the_bot, args=["dorfex_bos", "moonphase66"])
+p.starmap(the_bot, [("dorfex_bos", "moonphase33")])
+#p = Process(target=the_bot, args=["dorfex_bos", "moonphase33"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)
