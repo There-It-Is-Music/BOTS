@@ -4,6 +4,6 @@ sudo apt-get install python3-setuptools
 sudo easy_install3 pip
 sudo pip3 install fake-useragent
 git init
-git remote add https://github.com/There-It-Is-Music/BOTS.git
+git remote add origin https://github.com/There-It-Is-Music/BOTS.git
 git pull origin master
 python3 whatever-script-you-need-to-run.py 
