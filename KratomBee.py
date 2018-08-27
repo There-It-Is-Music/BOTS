@@ -17,17 +17,17 @@ def the_bot(id, passw):
     bot = InstaBot(
         login=id,
         password=passw,
-        like_per_day=1920,
+        like_per_day=5000,
         comments_per_day=0,
-        tag_list=['musicproducer', 'musicfestival', 'bassmusic', 'boilerroom', 'twinstagram', 'hulaween', 'okeechobefest', 'ableton', 'hardfest', 'trap', 'dubstep'],
+        tag_list=['kratom', 'iamkratom', 'kratomlife', 'kratomcommunity', 'kratomvendor', 'kratompowder', 'kratomtea', 'kratomusa', 'kratomsaveslives', 'kratomheals', 'kratomherbal', 'kratomcanada', 'alternativelifestyle', 'alternatives', 'tea','greentea', 'kava', 'homeopathy', 'homeopathics', 'vape', 'vapestore', 'vapeshop', 'florida'],
         tag_blacklist=['rain', 'thunderstorm'],
         user_blacklist={},
-        max_like_for_one_tag=176,
+        max_like_for_one_tag=1000,
         follow_per_day=0,
         follow_time=1 * 5,
         unfollow_per_day=0,
-        unfollow_break_min=60,
-        unfollow_break_max=60,
+        unfollow_break_min=0,
+        unfollow_break_max=0,
         log_mod=0,
         proxy='',
         # List of list of words, each of which will be used to generate comment
@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("mzgmusic", "ihatedoingthis69")])
-#p = Process(target=the_bot, args=["mzgmusic", "ihatedoingthis69"])
+p.starmap(the_bot, [("KratomBee", "Jameis43")])
+#p = Process(target=the_bot, args=["KratomBee", "Jameis43"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)
