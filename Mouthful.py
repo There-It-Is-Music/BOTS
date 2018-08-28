@@ -17,17 +17,17 @@ def the_bot(id, passw):
     bot = InstaBot(
         login=id,
         password=passw,
-        like_per_day=1000,
-        comments_per_day=1000,
-        tag_list=['edm', 'rave', 'dj', 'maddecent', 'house', 'edmlifestyle', 'bassmusic', 'bass', 'festival', 'tally', 'trap', 'housemusic', 'dubstep', 'edmlifestyle', 'dancemusic', 'ravers', 'ravegirl', 'plur', 'electronicdancemusic', 'edmhumor', 'edmfamily', 'futurebass'],
+        like_per_day=1920,
+        comments_per_day=0,
+        tag_list=['cleaneating', 'hungry', 'chefmode', 'eating', 'food', 'nom', 'foodie', 'zipkick', 'bosseats', 'foodblogmiami'], 
         tag_blacklist=['rain', 'thunderstorm'],
         user_blacklist={},
-        max_like_for_one_tag=1000,
+        max_like_for_one_tag=192,
         follow_per_day=0,
         follow_time=1 * 5,
-        unfollow_per_day=1440,
-        unfollow_break_min=60,
-        unfollow_break_max=60,
+        unfollow_per_day=0,
+        unfollow_break_min=0,
+        unfollow_break_max=0,
         log_mod=0,
         proxy='',
         # List of list of words, each of which will be used to generate comment
@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("DJ_There_It_Is", "Kenders103*")])
-#p = Process(target=the_bot, args=["DJ_There_It_Is", "Kenders103*"])
+p.starmap(the_bot, [("mouthfulofbeats", "KMT1a2a3a4a!!!")])
+#p = Process(target=the_bot, args=["mouthfulofbeats", "KMT1a2a3a4a!!!"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)
