@@ -17,9 +17,9 @@ def the_bot(id, passw):
     bot = InstaBot(
         login=id,
         password=passw,
-        like_per_day=5000,
+        like_per_day=1920,
         comments_per_day=0,
-        tag_list=['kratom', 'iamkratom', 'kratomlife', 'kratomcommunity', 'kratomvendor', 'kratompowder', 'kratomtea', 'kratomusa', 'kratomsaveslives', 'kratomheals', 'kratomherbal', 'kratomcanada', 'alternativelifestyle', 'alternatives', 'tea','greentea', 'kava', 'homeopathy', 'homeopathics', 'vape', 'vapestore', 'vapeshop', 'florida'],
+        tag_list=['kratom', 'iamkratom', 'kratomlife', 'kratomcommunity', 'kratomvendor', 'kratompowder', 'kratomtea', 'kratomusa', 'kratomsaveslives', 'kratomheals', 'kratomherbal', 'kratomcanada', 'alternativelifestyle', 'alternatives', 'tea','greentea', 'kava', 'homeopathy', 'homeopathics', 'vape', 'vapestore', 'vapeshop', 'florida', 'kava', 'tallahassee', '850', 'tally', 'juice', 'capital', 'capitalcity', 'smallbusiness', 'healthy', 'collegetown', 'fsu', 'famu', 'fsunited', 'tcc', 'freshman', 'sophmore', 'junior', 'senior', 'plants', 'goodvibes', 'vibes', 'tallahasseeevents', 'artistic', 'photography', 'nolenation', 'noles', 'gonoles', 'ihearttally', 'bar'],
         tag_blacklist=['rain', 'thunderstorm'],
         user_blacklist={},
         max_like_for_one_tag=1000,
@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("KratomBee", "Jameis43")])
-#p = Process(target=the_bot, args=["KratomBee", "Jameis43"])
+p.starmap(the_bot, [("SerenityKavaBar", "@ndr3w0414Mln")])
+#p = Process(target=the_bot, args=["SerenityKavaBar", "ndr3w0414Mln"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)
