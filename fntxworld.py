@@ -17,17 +17,17 @@ def the_bot(id, passw):
     bot = InstaBot(
         login=id,
         password=passw,
-        like_per_day=1920,
+        like_per_day=5000,
         comments_per_day=0,
-        tag_list=['cleaneating', 'hungry', 'chefmode', 'eating', 'food', 'nom', 'foodie', 'zipkick', 'bosseats', 'foodblogmiami'], 
+        tag_list=['muaythai', 'Kickboxing', 'mma', 'fightnight', 'boxing', 'ufc', 'bellator', 'wwe', 'conormcgregor', 'thenotorious' 'fighting', 'hiphop', 'concert', 'musiclover', 'asaprocky', 'awge', 'rock', 'itslit', 'supreme', 'offwhite', 'grailed', 'fightclub', 'edmfamily'],
         tag_blacklist=['rain', 'thunderstorm'],
         user_blacklist={},
-        max_like_for_one_tag=192,
+        max_like_for_one_tag=3000,
         follow_per_day=0,
         follow_time=1 * 5,
         unfollow_per_day=0,
-        unfollow_break_min=0,
-        unfollow_break_max=0,
+        unfollow_break_min=15,
+        unfollow_break_max=30,
         log_mod=0,
         proxy='',
         # List of list of words, each of which will be used to generate comment
@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("mouthfulofbeats", "KMT1a2a3a4a!!!")])
-#p = Process(target=the_bot, args=["mouthfulofbeats", "KMT1a2a3a4a!!!"])
+p.starmap(the_bot, [("fntxworld", "coyote311")])
+#p = Process(target=the_bot, args=["fntxworld", "coyote311"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)
