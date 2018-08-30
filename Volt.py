@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("Iamvoltmusic", "qMSZvpSd5v")])
-#p = Process(target=the_bot, args=["Iamvoltmusic", "qMSZvpSd5v"])
+p.starmap(the_bot, [("voltmusicofficial", "qMSZvpSd5v")])
+#p = Process(target=the_bot, args=["voltmusicofficial", "qMSZvpSd5v"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)
