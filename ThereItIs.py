@@ -29,7 +29,7 @@ def the_bot(id, passw):
         unfollow_break_min=60,
         unfollow_break_max=60,
         log_mod=0,
-        proxy='127.0.0.1',
+        proxy='',
         # List of list of words, each of which will be used to generate comment
         # For example: "This shot feels wow!"
         comment_list=[["this", "the", "your"],
