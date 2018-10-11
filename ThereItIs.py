@@ -17,8 +17,8 @@ def the_bot(id, passw):
     bot = InstaBot(
         login=id,
         password=passw,
-        like_per_day=2000,
-        comments_per_day=2000,
+        like_per_day=1920,
+        comments_per_day=0,
         tag_list=['edm', 'rave', 'dj', 'maddecent', 'house', 'edmlifestyle', 'bassmusic', 'bass', 'festival', 'tally', 'trap', 'housemusic', 'dubstep', 'edmlifestyle', 'dancemusic', 'ravers', 'ravegirl', 'plur', 'electronicdancemusic', 'edmhumor', 'edmfamily', 'futurebass'],
         tag_blacklist=['rain', 'thunderstorm'],
         user_blacklist={},
