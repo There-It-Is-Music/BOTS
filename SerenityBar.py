@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("KavaKaze", "@ndr3w0414Mln")])
-#p = Process(target=the_bot, args=["KavaKaze", "@ndr3w0414Mln"])
+p.starmap(the_bot, [("serenitycoffeekava ", "@ndr3w0414Mln")])
+#p = Process(target=the_bot, args=["serenitycoffeekava ", "@ndr3w0414Mln"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)
