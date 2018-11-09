@@ -17,7 +17,7 @@ def the_bot(id, passw):
     bot = InstaBot(
         login=id,
         password=passw,
-        like_per_day=1920,
+        like_per_day=5000,
         comments_per_day=0,
         tag_list=['coffee', 'cafe', 'tally', 'ihearttally', 'florida', 'fl', 'localcoffee', 'drinklocal', 'siplocal', 'shoplocal'],
         tag_blacklist=['rain', 'thunderstorm'],
@@ -116,8 +116,8 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("powerplantcafe", "dsddsdd")])
-#p = Process(target=the_bot, args=["powerplantcafe", "dsddsdd"])
+p.starmap(the_bot, [("remaxcafe", "dsddsdd")])
+#p = Process(target=the_bot, args=["remaxcafe", "dsddsdd"])
 #p.start()
 #p.join()
 #pool.apply_async(the_bot)
