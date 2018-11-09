@@ -12,7 +12,7 @@ from src.unfollow_protocol import unfollow_protocol
 bot = InstaBot(
     login="remaxcafe",
     password="benben23",
-    like_per_day=5000,
+    like_per_day=5001,
     comments_per_day=0,
     tag_list=['coffee', 'downtowntampa', 'tampadowntown', 'tampa', 'cafe', 'shoplocal', 'coffeeoftheday', 'espresso', 'specialtycoffee', 'hydeparkvillage', 'brewgooddogood', 'tampabay', 'buddybrew', 'oxfordexchange', 'riseandshine'],
     tag_blacklist=['rain', 'thunderstorm'],
