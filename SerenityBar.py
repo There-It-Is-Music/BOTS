@@ -116,7 +116,7 @@ def the_bot(id, passw):
             print("Wrong mode!")
 
 p = Pool()
-p.starmap(the_bot, [("serenitycoffeekava ", "@ndr3w0414Mln")])
+p.starmap(the_bot, [("serenitycoffeekava ", "53R3n1ty")])
 #p = Process(target=the_bot, args=["serenitycoffeekava ", "@ndr3w0414Mln"])
 #p.start()
 #p.join()
